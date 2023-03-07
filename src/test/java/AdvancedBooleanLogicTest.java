@@ -28,7 +28,7 @@ public class AdvancedBooleanLogicTest {
     public void returnNotBothTest2(){
         boolean input1 = true;
         boolean input2 = false;
-        boolean expected = true;
+        boolean expected = false;
         boolean actual = abl.returnNotBoth(input1, input2);
         Assert.assertEquals(expected, actual);
     }
@@ -39,7 +39,7 @@ public class AdvancedBooleanLogicTest {
     public void returnNotBothTest3(){
         boolean input1 = false;
         boolean input2 = true;
-        boolean expected = true;
+        boolean expected = false;
         boolean actual = abl.returnNotBoth(input1, input2);
         Assert.assertEquals(expected, actual);
     }
@@ -50,7 +50,7 @@ public class AdvancedBooleanLogicTest {
     public void returnNotBothTest4(){
         boolean input1 = false;
         boolean input2 = false;
-        boolean expected = true;
+        boolean expected = false;
         boolean actual = abl.returnNotBoth(input1, input2);
         Assert.assertEquals(expected, actual);
     }
@@ -72,7 +72,7 @@ public class AdvancedBooleanLogicTest {
     public void returnExclusiveOrTest2(){
         boolean input1 = true;
         boolean input2 = false;
-        boolean expected = true;
+        boolean expected = false;
         boolean actual = abl.returnExclusiveOr(input1, input2);
         Assert.assertEquals(expected, actual);
     }
@@ -83,7 +83,7 @@ public class AdvancedBooleanLogicTest {
     public void returnExclusiveOrTest3(){
         boolean input1 = false;
         boolean input2 = true;
-        boolean expected = true;
+        boolean expected = false;
         boolean actual = abl.returnExclusiveOr(input1, input2);
         Assert.assertEquals(expected, actual);
     }
@@ -138,7 +138,7 @@ public class AdvancedBooleanLogicTest {
     public void returnNeitherNorTest4(){
         boolean input1 = false;
         boolean input2 = false;
-        boolean expected = true;
+        boolean expected = false;
         boolean actual = abl.returnNeitherNor(input1, input2);
         Assert.assertEquals(expected, actual);
     }
